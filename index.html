@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Meta-Organism</title>
+  <meta name="description" content="Meta-Organism">
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"
+
+</head>
+<body style="background-image: linear-gradient(#333333, #ffffff);">
+  <div class="3d-stuff">
+
+
+    <a-scene gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/" vr-mode-ui="enabled: false">
+
+      <a-entity camera="fov:10" look-controls orbit-controls="target: 0 0 0;
+      maxPolarAngle:180;
+      minDistance: 0.5;
+      maxDistance: 200;
+      initialPosition: 6 6 6"
+      animation="property: rotation; to: 0 360 0; dur: 200000; easing: linear; loop: true"
+      ></a-entity>
+
+      <a-entity gltf-model="soap_dish_3.gltf"></a-entity>
+
+    </a-scene>
+  </div>
+
+  <div class="nav" style="padding: 100px;">
+    <div class="logo">
+      <svg>
+        <style type="text/css">
+        .st0{fill:none;stroke:#A8A8A8;stroke-width:2;stroke-miterlimit:10;}
+        </style>
+        <g>
+          <circle class="st0" cx="62.21" cy="27.97" r="17.12"/>
+          <line class="st0" x1="62.21" y1="0" x2="62.21" y2="57.07"/>
+          <polyline class="st0" points="0,44.52 0,10.27 34.59,31.5 	"/>
+          <polyline class="st0" points="34.59,44.52 34.59,10.27 0,31.16 	"/>
+        </g>
+      </svg>
+
+    </div>
+
+    <div class="product-title" style="font-family: 'Source Code Pro', monospace; font-size:72px; color:#1700b7;">
+      _SD06
+    </div>
+
+  </div>
+
+</body>
+</html>
