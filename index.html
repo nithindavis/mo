@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Meta-Organism</title>
   <meta name="description" content="Meta-Organism">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
 
@@ -11,8 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"
 
 </head>
-<body style="background-image: linear-gradient(#333333, #ffffff);">
-  <div class="3d-stuff">
+<body style="background-image: linear-gradient(#f2f2f2, #ffffff);">
+
+  <!-- <div class="3d-stuff">
 
 
     <a-scene gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/" vr-mode-ui="enabled: false">
@@ -28,10 +31,12 @@
       <a-entity gltf-model="soap_dish_3.gltf"></a-entity>
 
     </a-scene>
-  </div>
+  </div> -->
 
-  <div class="nav" style="padding: 100px;">
-    <div class="logo">
+  <iframe src="/soapdish_3d.html" width="100%" height="700px" style="z-index: -1; background-color: #e1eefa"></iframe>
+
+  <div class="nav" style="padding: 16px; position: absolute; top: 0; ">
+    <div class="logo" style="display: inline-block; ">
       <svg>
         <style type="text/css">
         .st0{fill:none;stroke:#A8A8A8;stroke-width:2;stroke-miterlimit:10;}
@@ -44,13 +49,68 @@
         </g>
       </svg>
 
+      <div class="">
+        A 3log of things. That Matter. To Me.
+      </div>
+
+
+
     </div>
 
-    <div class="product-title" style="display: none; font-family: 'Source Code Pro', monospace; font-size:72px; color:#1700b7;">
-      _SD06
+    <div class="active-link">
+      <div>
+        _SD06
+      </div>
+      <div class="sub-title">
+        soapdish
+      </div>
+      <div>
+        _m03
+      </div>
+      <div class="sub-title">
+        mesh
+      </div>
     </div>
+
+    <div class="inactive-link">
+      <div>
+        _5x16
+      </div>
+      <div class="sub-title">
+        deskcase
+      </div>
+    </div>
+
+    <div class="inactive-link">
+      <div>
+        _Tremel
+      </div>
+      <div class="sub-title">
+        mini-rotary (wip)
+      </div>
+    </div>
+
+    <div class="inactive-link">
+      <div>
+        _Shiflle
+      </div>
+      <div class="sub-title">
+        puzzling-toy (wip)
+      </div>
+    </div>
+
+
 
   </div>
+
+
+
+  <div class="about-section">
+    <h1 class="big-heading">_SD06</h1>
+    <p>A rather simple soap dish</p>
+  </div>
+
+
 
 </body>
 </html>
