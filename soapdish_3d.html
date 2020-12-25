@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Meta-Organism</title>
+  <meta name="description" content="Meta-Organism. A log of my 3d printing explorations.">
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+</head>
+<body>
+  <div class="3d-stuff">
+
+
+    <a-scene gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/" vr-mode-ui="enabled: true">
+
+      <a-entity camera="fov:10" look-controls orbit-controls="target: 0 0 0;
+      maxPolarAngle:180;
+      minDistance: 0.5;
+      maxDistance: 200;
+      initialPosition: 6 6 6;"
+      animation="property: rotation; to: 0 360 0; dur: 200000; easing: linear; loop: true">
+      <a-entity light="type: ambient; color: #BBB"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+      </a-entity>
+
+    <a-entity gltf-model="soap_dish_3.gltf"></a-entity>
+
+
+
+  </a-scene>
+</div>
+</body>
+</html>
